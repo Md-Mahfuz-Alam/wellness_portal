@@ -2,6 +2,7 @@
   "name": "test1",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Md-Mahfuz-Alam.github.io/wellness_portal",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -14,6 +15,7 @@
     "axios-react": "^2.0.8",
     "bootstrap": "^5.2.1",
     "gapi-script": "^1.2.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
@@ -27,6 +29,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
